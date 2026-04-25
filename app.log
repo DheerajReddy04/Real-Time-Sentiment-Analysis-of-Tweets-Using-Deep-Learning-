@@ -1,0 +1,366 @@
+2025-10-16 16:37:14,676 [INFO] Starting Streamlit app
+2025-10-16 16:37:20,595 [INFO] Starting Streamlit app
+2025-10-16 16:37:20,708 [INFO] Starting Streamlit app
+2025-10-16 16:37:20,808 [INFO] Starting Streamlit app
+2025-10-16 16:40:23,762 [INFO] Starting Streamlit app
+2025-10-16 16:40:29,447 [INFO] Starting Streamlit app
+2025-10-16 16:40:29,541 [INFO] Starting Streamlit app
+2025-10-16 16:40:29,609 [INFO] Starting Streamlit app
+2025-10-16 16:40:37,038 [INFO] Starting Streamlit app
+2025-10-16 16:40:38,515 [INFO] Starting Streamlit app
+2025-10-16 16:41:22,787 [INFO] Starting Streamlit app
+2025-10-16 16:41:22,871 [INFO] Preprocessed 20 tweets
+2025-10-16 16:41:24,675 [INFO] Starting Streamlit app
+2025-10-16 16:41:24,743 [INFO] Computed rule-based sentiment for 20 rows
+2025-10-16 16:42:20,822 [INFO] Starting Streamlit app
+2025-10-16 16:42:26,694 [INFO] Starting Streamlit app
+2025-10-16 16:42:27,939 [INFO] Starting Streamlit app
+2025-10-16 16:42:28,034 [INFO] Starting Streamlit app
+2025-10-16 16:42:34,828 [INFO] Starting Streamlit app
+2025-10-16 16:42:38,826 [INFO] Starting Streamlit app
+2025-10-16 16:42:43,579 [INFO] Starting Streamlit app
+2025-10-16 16:42:49,620 [INFO] Starting Streamlit app
+2025-10-16 16:42:49,687 [INFO] Starting Streamlit app
+2025-10-16 16:42:54,446 [INFO] Starting Streamlit app
+2025-10-16 16:42:54,545 [INFO] Starting Streamlit app
+2025-10-16 16:42:54,644 [INFO] Starting Streamlit app
+2025-10-16 16:42:59,642 [INFO] Starting Streamlit app
+2025-10-16 16:43:03,248 [INFO] Starting Streamlit app
+2025-10-16 16:45:31,788 [INFO] Starting Streamlit app
+2025-10-16 16:45:35,546 [INFO] Starting Streamlit app
+2025-10-16 16:45:41,247 [INFO] Starting Streamlit app
+2025-10-16 16:45:43,782 [INFO] Starting Streamlit app
+2025-10-16 16:45:43,893 [INFO] Preprocessed 20 tweets
+2025-10-16 16:45:44,909 [INFO] Starting Streamlit app
+2025-10-16 16:45:44,986 [INFO] Computed rule-based sentiment for 20 rows
+2025-10-16 17:02:09,322 [INFO] Starting Streamlit app
+2025-10-16 17:02:12,821 [INFO] Starting Streamlit app
+2025-10-16 17:02:12,890 [INFO] Starting Streamlit app
+2025-10-16 17:02:12,953 [INFO] Starting Streamlit app
+2025-10-16 17:02:14,926 [INFO] Starting Streamlit app
+2025-10-16 17:02:23,802 [INFO] Starting Streamlit app
+2025-10-16 17:02:24,923 [INFO] Starting Streamlit app
+2025-10-16 17:02:32,699 [INFO] Starting Streamlit app
+2025-10-16 17:02:34,868 [INFO] HTTP Request: GET https://x.com "HTTP/1.1 200 OK"
+2025-10-16 17:02:35,002 [INFO] HTTP Request: GET https://abs.twimg.com/responsive-web/client-web/ondemand.s.d699266a.js "HTTP/1.1 200 OK"
+2025-10-16 17:02:35,295 [INFO] HTTP Request: GET https://x.com/i/api/graphql/flaR-PUMshxFWZWPNpq4zA/SearchTimeline?variables=%7B%22rawQuery%22%3A+%22birthday%22%2C+%22count%22%3A+20%2C+%22querySource%22%3A+%22typed_query%22%2C+%22product%22%3A+%22Latest%22%7D&features=%7B%22creator_subscriptions_tweet_preview_api_enabled%22%3A+true%2C+%22c9s_tweet_anatomy_moderator_badge_enabled%22%3A+true%2C+%22tweetypie_unmention_optimization_enabled%22%3A+true%2C+%22responsive_web_edit_tweet_api_enabled%22%3A+true%2C+%22graphql_is_translatable_rweb_tweet_is_translatable_enabled%22%3A+true%2C+%22view_counts_everywhere_api_enabled%22%3A+true%2C+%22longform_notetweets_consumption_enabled%22%3A+true%2C+%22responsive_web_twitter_article_tweet_consumption_enabled%22%3A+true%2C+%22tweet_awards_web_tipping_enabled%22%3A+false%2C+%22longform_notetweets_rich_text_read_enabled%22%3A+true%2C+%22longform_notetweets_inline_media_enabled%22%3A+true%2C+%22rweb_video_timestamps_enabled%22%3A+true%2C+%22responsive_web_graphql_exclude_directive_enabled%22%3A+true%2C+%22verified_phone_label_enabled%22%3A+false%2C+%22freedom_of_speech_not_reach_fetch_enabled%22%3A+true%2C+%22standardized_nudges_misinfo%22%3A+true%2C+%22tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled%22%3A+true%2C+%22responsive_web_media_download_video_enabled%22%3A+false%2C+%22responsive_web_graphql_skip_user_profile_image_extensions_enabled%22%3A+false%2C+%22responsive_web_graphql_timeline_navigation_enabled%22%3A+true%2C+%22responsive_web_enhance_cards_enabled%22%3A+false%7D "HTTP/1.1 404 Not Found"
+2025-10-16 17:02:35,301 [ERROR] Error fetching live tweets
+Traceback (most recent call last):
+  File "C:\Users\saidh\realtime-sentiment\app.py", line 127, in fetch_live_tweets_twikit
+    df = fetch_tweets_twikit(q, limit_val)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\saidh\realtime-sentiment\collector_twikit.py", line 37, in fetch_tweets_twikit
+    df_new = asyncio.run(_fetch_async(query, limit))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\saidh\AppData\Local\Programs\Python\Python311\Lib\asyncio\runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\saidh\AppData\Local\Programs\Python\Python311\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\saidh\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 654, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\saidh\realtime-sentiment\collector_twikit.py", line 18, in _fetch_async
+    results = await client.search_tweet(query, 'Latest', count=limit)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\saidh\realtime-sentiment\venv311\Lib\site-packages\twikit\client\client.py", line 731, in search_tweet
+    response, _ = await self.gql.search_timeline(query, product, count, cursor)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\saidh\realtime-sentiment\venv311\Lib\site-packages\twikit\client\gql.py", line 159, in search_timeline
+    return await self.gql_get(Endpoint.SEARCH_TIMELINE, variables, FEATURES)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\saidh\realtime-sentiment\venv311\Lib\site-packages\twikit\client\gql.py", line 124, in gql_get
+    return await self.base.get(url, params=flatten_params(params), headers=headers, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\saidh\realtime-sentiment\venv311\Lib\site-packages\twikit\client\client.py", line 211, in get
+    return await self.request('GET', url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\saidh\realtime-sentiment\venv311\Lib\site-packages\twikit\client\client.py", line 192, in request
+    raise NotFound(message, headers=response.headers)
+twikit.errors.NotFound: status: 404, message: ""
+2025-10-16 17:02:35,545 [INFO] Fetched 0 tweets (source=Live (Twitter via Twikit), query=birthday, limit=20)
+2025-10-16 17:02:42,397 [INFO] Starting Streamlit app
+2025-10-16 17:02:44,967 [INFO] Starting Streamlit app
+2025-10-16 17:02:44,994 [INFO] Fetched 20 tweets (source=Demo CSV / Sample, query=birthday, limit=20)
+2025-10-16 17:03:04,654 [INFO] Starting Streamlit app
+2025-10-16 17:03:04,748 [INFO] Preprocessed 20 tweets
+2025-10-16 17:03:05,602 [INFO] Starting Streamlit app
+2025-10-16 17:03:05,646 [INFO] Computed rule-based sentiment for 20 rows
+2025-10-16 17:11:04,805 [INFO] Fetched 20 tweets (source=Demo CSV / Sample, query=birthday, limit=20)
+2025-10-16 17:11:06,998 [INFO] Fetched 20 tweets (source=Demo CSV / Sample, query=birthday, limit=20)
+2025-10-16 17:17:56,641 [INFO] Starting Streamlit app
+2025-10-16 17:18:01,006 [INFO] Starting Streamlit app
+2025-10-16 17:18:01,112 [INFO] Starting Streamlit app
+2025-10-16 17:18:01,190 [INFO] Starting Streamlit app
+2025-10-16 17:18:08,636 [INFO] Starting Streamlit app
+2025-10-16 17:18:13,442 [INFO] Starting Streamlit app
+2025-10-16 17:18:28,531 [INFO] Starting Streamlit app
+2025-10-16 17:18:28,612 [INFO] Preprocessed 20 tweets
+2025-10-16 17:18:30,055 [INFO] Starting Streamlit app
+2025-10-16 17:18:30,104 [INFO] Computed rule-based sentiment for 20 rows
+2025-10-16 17:18:57,037 [INFO] Starting Streamlit app
+2025-10-16 17:19:01,517 [INFO] Starting Streamlit app
+2025-10-16 17:19:01,608 [INFO] Starting Streamlit app
+2025-10-16 17:19:05,093 [INFO] Starting Streamlit app
+2025-10-16 17:19:05,188 [INFO] Starting Streamlit app
+2025-10-16 17:19:05,251 [INFO] Starting Streamlit app
+2025-10-16 17:19:12,271 [INFO] Starting Streamlit app
+2025-10-16 17:19:13,360 [INFO] Starting Streamlit app
+2025-10-16 17:24:23,987 [INFO] Starting Streamlit app
+2025-10-16 17:24:27,521 [INFO] Starting Streamlit app
+2025-10-16 17:24:29,167 [INFO] HTTP Request: GET https://x.com "HTTP/1.1 200 OK"
+2025-10-16 17:24:29,226 [INFO] HTTP Request: GET https://abs.twimg.com/responsive-web/client-web/ondemand.s.d699266a.js "HTTP/1.1 200 OK"
+2025-10-16 17:24:29,914 [INFO] HTTP Request: GET https://x.com/i/api/graphql/flaR-PUMshxFWZWPNpq4zA/SearchTimeline?variables=%7B%22rawQuery%22%3A+%22birthday%22%2C+%22count%22%3A+20%2C+%22querySource%22%3A+%22typed_query%22%2C+%22product%22%3A+%22Latest%22%7D&features=%7B%22creator_subscriptions_tweet_preview_api_enabled%22%3A+true%2C+%22c9s_tweet_anatomy_moderator_badge_enabled%22%3A+true%2C+%22tweetypie_unmention_optimization_enabled%22%3A+true%2C+%22responsive_web_edit_tweet_api_enabled%22%3A+true%2C+%22graphql_is_translatable_rweb_tweet_is_translatable_enabled%22%3A+true%2C+%22view_counts_everywhere_api_enabled%22%3A+true%2C+%22longform_notetweets_consumption_enabled%22%3A+true%2C+%22responsive_web_twitter_article_tweet_consumption_enabled%22%3A+true%2C+%22tweet_awards_web_tipping_enabled%22%3A+false%2C+%22longform_notetweets_rich_text_read_enabled%22%3A+true%2C+%22longform_notetweets_inline_media_enabled%22%3A+true%2C+%22rweb_video_timestamps_enabled%22%3A+true%2C+%22responsive_web_graphql_exclude_directive_enabled%22%3A+true%2C+%22verified_phone_label_enabled%22%3A+false%2C+%22freedom_of_speech_not_reach_fetch_enabled%22%3A+true%2C+%22standardized_nudges_misinfo%22%3A+true%2C+%22tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled%22%3A+true%2C+%22responsive_web_media_download_video_enabled%22%3A+false%2C+%22responsive_web_graphql_skip_user_profile_image_extensions_enabled%22%3A+false%2C+%22responsive_web_graphql_timeline_navigation_enabled%22%3A+true%2C+%22responsive_web_enhance_cards_enabled%22%3A+false%7D "HTTP/1.1 200 OK"
+2025-10-16 17:24:29,959 [INFO] Fetched 20 tweets (source=Live (Twitter via Twikit), query=birthday, limit=20)
+2025-10-16 17:25:41,023 [INFO] Starting Streamlit app
+2025-10-16 17:25:42,674 [INFO] HTTP Request: GET https://x.com "HTTP/1.1 200 OK"
+2025-10-16 17:25:42,794 [INFO] HTTP Request: GET https://abs.twimg.com/responsive-web/client-web/ondemand.s.d699266a.js "HTTP/1.1 200 OK"
+2025-10-16 17:25:43,097 [INFO] HTTP Request: GET https://x.com/i/api/graphql/flaR-PUMshxFWZWPNpq4zA/SearchTimeline?variables=%7B%22rawQuery%22%3A+%22birthday%22%2C+%22count%22%3A+20%2C+%22querySource%22%3A+%22typed_query%22%2C+%22product%22%3A+%22Latest%22%7D&features=%7B%22creator_subscriptions_tweet_preview_api_enabled%22%3A+true%2C+%22c9s_tweet_anatomy_moderator_badge_enabled%22%3A+true%2C+%22tweetypie_unmention_optimization_enabled%22%3A+true%2C+%22responsive_web_edit_tweet_api_enabled%22%3A+true%2C+%22graphql_is_translatable_rweb_tweet_is_translatable_enabled%22%3A+true%2C+%22view_counts_everywhere_api_enabled%22%3A+true%2C+%22longform_notetweets_consumption_enabled%22%3A+true%2C+%22responsive_web_twitter_article_tweet_consumption_enabled%22%3A+true%2C+%22tweet_awards_web_tipping_enabled%22%3A+false%2C+%22longform_notetweets_rich_text_read_enabled%22%3A+true%2C+%22longform_notetweets_inline_media_enabled%22%3A+true%2C+%22rweb_video_timestamps_enabled%22%3A+true%2C+%22responsive_web_graphql_exclude_directive_enabled%22%3A+true%2C+%22verified_phone_label_enabled%22%3A+false%2C+%22freedom_of_speech_not_reach_fetch_enabled%22%3A+true%2C+%22standardized_nudges_misinfo%22%3A+true%2C+%22tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled%22%3A+true%2C+%22responsive_web_media_download_video_enabled%22%3A+false%2C+%22responsive_web_graphql_skip_user_profile_image_extensions_enabled%22%3A+false%2C+%22responsive_web_graphql_timeline_navigation_enabled%22%3A+true%2C+%22responsive_web_enhance_cards_enabled%22%3A+false%7D "HTTP/1.1 404 Not Found"
+2025-10-16 17:25:43,105 [ERROR] Error fetching live tweets
+Traceback (most recent call last):
+  File "C:\Users\saidh\realtime-sentiment\app.py", line 429, in fetch_live_tweets_twikit
+    df = fetch_tweets_twikit(q, limit_val)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\saidh\realtime-sentiment\collector_twikit.py", line 37, in fetch_tweets_twikit
+    df_new = asyncio.run(_fetch_async(query, limit))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\saidh\AppData\Local\Programs\Python\Python311\Lib\asyncio\runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\saidh\AppData\Local\Programs\Python\Python311\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\saidh\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 654, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\saidh\realtime-sentiment\collector_twikit.py", line 18, in _fetch_async
+    results = await client.search_tweet(query, 'Latest', count=limit)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\saidh\realtime-sentiment\venv311\Lib\site-packages\twikit\client\client.py", line 731, in search_tweet
+    response, _ = await self.gql.search_timeline(query, product, count, cursor)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\saidh\realtime-sentiment\venv311\Lib\site-packages\twikit\client\gql.py", line 159, in search_timeline
+    return await self.gql_get(Endpoint.SEARCH_TIMELINE, variables, FEATURES)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\saidh\realtime-sentiment\venv311\Lib\site-packages\twikit\client\gql.py", line 124, in gql_get
+    return await self.base.get(url, params=flatten_params(params), headers=headers, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\saidh\realtime-sentiment\venv311\Lib\site-packages\twikit\client\client.py", line 211, in get
+    return await self.request('GET', url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\saidh\realtime-sentiment\venv311\Lib\site-packages\twikit\client\client.py", line 192, in request
+    raise NotFound(message, headers=response.headers)
+twikit.errors.NotFound: status: 404, message: ""
+2025-10-16 17:25:43,116 [INFO] Fetched 0 tweets (source=Live (Twitter via Twikit), query=birthday, limit=20)
+2025-10-16 17:25:59,326 [INFO] Starting Streamlit app
+2025-10-16 17:26:00,677 [INFO] Starting Streamlit app
+2025-10-16 17:26:02,136 [INFO] HTTP Request: GET https://x.com "HTTP/1.1 200 OK"
+2025-10-16 17:26:02,689 [INFO] HTTP Request: GET https://abs.twimg.com/responsive-web/client-web/ondemand.s.d699266a.js "HTTP/1.1 200 OK"
+2025-10-16 17:26:03,567 [INFO] HTTP Request: GET https://x.com/i/api/graphql/flaR-PUMshxFWZWPNpq4zA/SearchTimeline?variables=%7B%22rawQuery%22%3A+%22birthday%22%2C+%22count%22%3A+10%2C+%22querySource%22%3A+%22typed_query%22%2C+%22product%22%3A+%22Latest%22%7D&features=%7B%22creator_subscriptions_tweet_preview_api_enabled%22%3A+true%2C+%22c9s_tweet_anatomy_moderator_badge_enabled%22%3A+true%2C+%22tweetypie_unmention_optimization_enabled%22%3A+true%2C+%22responsive_web_edit_tweet_api_enabled%22%3A+true%2C+%22graphql_is_translatable_rweb_tweet_is_translatable_enabled%22%3A+true%2C+%22view_counts_everywhere_api_enabled%22%3A+true%2C+%22longform_notetweets_consumption_enabled%22%3A+true%2C+%22responsive_web_twitter_article_tweet_consumption_enabled%22%3A+true%2C+%22tweet_awards_web_tipping_enabled%22%3A+false%2C+%22longform_notetweets_rich_text_read_enabled%22%3A+true%2C+%22longform_notetweets_inline_media_enabled%22%3A+true%2C+%22rweb_video_timestamps_enabled%22%3A+true%2C+%22responsive_web_graphql_exclude_directive_enabled%22%3A+true%2C+%22verified_phone_label_enabled%22%3A+false%2C+%22freedom_of_speech_not_reach_fetch_enabled%22%3A+true%2C+%22standardized_nudges_misinfo%22%3A+true%2C+%22tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled%22%3A+true%2C+%22responsive_web_media_download_video_enabled%22%3A+false%2C+%22responsive_web_graphql_skip_user_profile_image_extensions_enabled%22%3A+false%2C+%22responsive_web_graphql_timeline_navigation_enabled%22%3A+true%2C+%22responsive_web_enhance_cards_enabled%22%3A+false%7D "HTTP/1.1 200 OK"
+2025-10-16 17:26:03,595 [INFO] Fetched 10 tweets (source=Live (Twitter via Twikit), query=birthday, limit=10)
+2025-10-16 17:26:18,251 [INFO] Starting Streamlit app
+2025-10-16 17:26:18,421 [INFO] Preprocessed 10 tweets
+2025-10-16 17:26:32,806 [INFO] Starting Streamlit app
+2025-10-16 17:26:32,875 [INFO] Computed rule-based sentiment for 10 rows
+2025-10-16 17:27:03,885 [INFO] Starting Streamlit app
+2025-10-16 17:27:04,023 [INFO] Saved results to results\tweets_result_20251016_115703.csv
+2025-10-16 17:27:08,310 [INFO] Starting Streamlit app
+2025-10-16 17:29:03,103 [INFO] Starting Streamlit app
+2025-10-16 17:29:03,304 [INFO] Starting Streamlit app
+2025-10-16 17:29:04,895 [INFO] HTTP Request: GET https://x.com "HTTP/1.1 200 OK"
+2025-10-16 17:29:04,997 [INFO] HTTP Request: GET https://abs.twimg.com/responsive-web/client-web/ondemand.s.d699266a.js "HTTP/1.1 200 OK"
+2025-10-16 17:29:05,841 [INFO] HTTP Request: GET https://x.com/i/api/graphql/flaR-PUMshxFWZWPNpq4zA/SearchTimeline?variables=%7B%22rawQuery%22%3A+%222025mamavote%22%2C+%22count%22%3A+10%2C+%22querySource%22%3A+%22typed_query%22%2C+%22product%22%3A+%22Latest%22%7D&features=%7B%22creator_subscriptions_tweet_preview_api_enabled%22%3A+true%2C+%22c9s_tweet_anatomy_moderator_badge_enabled%22%3A+true%2C+%22tweetypie_unmention_optimization_enabled%22%3A+true%2C+%22responsive_web_edit_tweet_api_enabled%22%3A+true%2C+%22graphql_is_translatable_rweb_tweet_is_translatable_enabled%22%3A+true%2C+%22view_counts_everywhere_api_enabled%22%3A+true%2C+%22longform_notetweets_consumption_enabled%22%3A+true%2C+%22responsive_web_twitter_article_tweet_consumption_enabled%22%3A+true%2C+%22tweet_awards_web_tipping_enabled%22%3A+false%2C+%22longform_notetweets_rich_text_read_enabled%22%3A+true%2C+%22longform_notetweets_inline_media_enabled%22%3A+true%2C+%22rweb_video_timestamps_enabled%22%3A+true%2C+%22responsive_web_graphql_exclude_directive_enabled%22%3A+true%2C+%22verified_phone_label_enabled%22%3A+false%2C+%22freedom_of_speech_not_reach_fetch_enabled%22%3A+true%2C+%22standardized_nudges_misinfo%22%3A+true%2C+%22tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled%22%3A+true%2C+%22responsive_web_media_download_video_enabled%22%3A+false%2C+%22responsive_web_graphql_skip_user_profile_image_extensions_enabled%22%3A+false%2C+%22responsive_web_graphql_timeline_navigation_enabled%22%3A+true%2C+%22responsive_web_enhance_cards_enabled%22%3A+false%7D "HTTP/1.1 200 OK"
+2025-10-16 17:29:05,867 [INFO] Fetched 10 tweets (source=Live (Twitter via Twikit), query=2025mamavote, limit=10)
+2025-10-16 17:29:35,500 [INFO] Starting Streamlit app
+2025-10-16 17:29:35,653 [INFO] Preprocessed 10 tweets
+2025-10-16 17:29:39,324 [INFO] Starting Streamlit app
+2025-10-16 17:29:39,380 [INFO] Computed rule-based sentiment for 10 rows
+2025-10-16 17:29:46,037 [INFO] Starting Streamlit app
+2025-10-16 17:29:46,162 [INFO] Saved results to results\tweets_result_20251016_115946.csv
+2025-10-16 17:29:47,039 [INFO] Starting Streamlit app
+2025-10-16 17:29:48,820 [INFO] Starting Streamlit app
+2025-10-16 17:41:15,086 [INFO] Starting Streamlit app
+2025-10-16 17:41:18,507 [INFO] Starting Streamlit app
+2025-10-16 17:41:18,937 [INFO] Starting Streamlit app
+2025-10-16 17:41:19,023 [INFO] Starting Streamlit app
+2025-10-16 17:41:27,853 [INFO] Starting Streamlit app
+2025-10-16 17:41:29,022 [INFO] Starting Streamlit app
+2025-10-16 17:41:41,403 [INFO] Starting Streamlit app
+2025-10-16 17:41:43,915 [INFO] Starting Streamlit app
+2025-10-16 17:41:43,939 [INFO] Fetched 9 tweets (source=Demo CSV / Sample, query=birthday, limit=9)
+2025-10-16 17:43:21,952 [INFO] Starting Streamlit app
+2025-10-16 17:43:24,772 [INFO] Starting Streamlit app
+2025-10-16 17:43:24,846 [INFO] Starting Streamlit app
+2025-10-16 17:43:24,903 [INFO] Starting Streamlit app
+2025-10-16 17:43:31,753 [INFO] Starting Streamlit app
+2025-10-16 17:43:33,041 [INFO] Starting Streamlit app
+2025-10-16 17:45:22,609 [INFO] Starting Streamlit app
+2025-10-16 17:45:25,644 [INFO] Starting Streamlit app
+2025-10-16 17:45:25,737 [INFO] Starting Streamlit app
+2025-10-16 17:45:25,826 [INFO] Starting Streamlit app
+2025-10-16 17:45:29,471 [INFO] Starting Streamlit app
+2025-10-16 17:45:32,507 [INFO] Starting Streamlit app
+2025-10-16 17:45:37,085 [INFO] Starting Streamlit app
+2025-10-16 17:45:38,383 [INFO] Starting Streamlit app
+2025-10-16 17:45:44,199 [INFO] Starting Streamlit app
+2025-10-16 17:45:44,220 [INFO] Fetched 10 tweets (source=Demo CSV / Sample, query=birthday, limit=10)
+2025-10-16 17:45:52,042 [INFO] Starting Streamlit app
+2025-10-16 17:45:52,105 [INFO] Preprocessed 10 tweets
+2025-10-16 17:45:55,800 [INFO] Starting Streamlit app
+2025-10-16 17:45:55,840 [INFO] Computed rule-based sentiment for 10 rows
+2025-10-16 17:59:13,415 [INFO] Starting Streamlit app
+2025-10-16 17:59:17,694 [INFO] Starting Streamlit app
+2025-10-16 17:59:42,349 [INFO] Starting Streamlit app
+2025-10-16 17:59:54,866 [INFO] Starting Streamlit app
+2025-10-16 17:59:54,951 [INFO] Starting Streamlit app
+2025-10-16 18:02:58,178 [INFO] Starting Streamlit app
+2025-10-16 18:03:06,128 [INFO] Starting Streamlit app
+2025-10-16 18:03:09,158 [INFO] Starting Streamlit app
+2025-10-16 18:03:13,876 [INFO] Starting Streamlit app
+2025-10-16 18:03:26,052 [INFO] Starting Streamlit app
+2025-10-16 18:03:26,092 [INFO] Fetched 10 tweets (source=Demo CSV / Sample, query=birthday, limit=10)
+2025-10-16 18:04:00,504 [INFO] Starting Streamlit app
+2025-10-16 18:04:00,593 [INFO] Preprocessed 10 tweets
+2025-10-16 18:05:47,240 [INFO] Starting Streamlit app
+2025-10-16 18:05:47,329 [INFO] Computed rule-based sentiment for 10 rows
+2025-10-16 18:06:25,147 [INFO] Starting Streamlit app
+2025-10-16 18:06:29,993 [INFO] Starting Streamlit app
+2025-10-16 18:07:48,964 [INFO] Starting Streamlit app
+2025-10-16 18:07:49,212 [INFO] Starting Streamlit app
+2025-10-16 18:07:51,594 [INFO] HTTP Request: GET https://x.com "HTTP/1.1 200 OK"
+2025-10-16 18:07:51,856 [INFO] HTTP Request: GET https://abs.twimg.com/responsive-web/client-web/ondemand.s.d699266a.js "HTTP/1.1 200 OK"
+2025-10-16 18:07:52,385 [INFO] HTTP Request: GET https://x.com/i/api/graphql/flaR-PUMshxFWZWPNpq4zA/SearchTimeline?variables=%7B%22rawQuery%22%3A+%22asksiddhu%22%2C+%22count%22%3A+10%2C+%22querySource%22%3A+%22typed_query%22%2C+%22product%22%3A+%22Latest%22%7D&features=%7B%22creator_subscriptions_tweet_preview_api_enabled%22%3A+true%2C+%22c9s_tweet_anatomy_moderator_badge_enabled%22%3A+true%2C+%22tweetypie_unmention_optimization_enabled%22%3A+true%2C+%22responsive_web_edit_tweet_api_enabled%22%3A+true%2C+%22graphql_is_translatable_rweb_tweet_is_translatable_enabled%22%3A+true%2C+%22view_counts_everywhere_api_enabled%22%3A+true%2C+%22longform_notetweets_consumption_enabled%22%3A+true%2C+%22responsive_web_twitter_article_tweet_consumption_enabled%22%3A+true%2C+%22tweet_awards_web_tipping_enabled%22%3A+false%2C+%22longform_notetweets_rich_text_read_enabled%22%3A+true%2C+%22longform_notetweets_inline_media_enabled%22%3A+true%2C+%22rweb_video_timestamps_enabled%22%3A+true%2C+%22responsive_web_graphql_exclude_directive_enabled%22%3A+true%2C+%22verified_phone_label_enabled%22%3A+false%2C+%22freedom_of_speech_not_reach_fetch_enabled%22%3A+true%2C+%22standardized_nudges_misinfo%22%3A+true%2C+%22tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled%22%3A+true%2C+%22responsive_web_media_download_video_enabled%22%3A+false%2C+%22responsive_web_graphql_skip_user_profile_image_extensions_enabled%22%3A+false%2C+%22responsive_web_graphql_timeline_navigation_enabled%22%3A+true%2C+%22responsive_web_enhance_cards_enabled%22%3A+false%7D "HTTP/1.1 200 OK"
+2025-10-16 18:07:52,416 [INFO] Fetched 10 tweets (source=Live (Twitter via Twikit), query=asksiddhu, limit=10)
+2025-10-16 18:09:13,902 [INFO] Starting Streamlit app
+2025-10-16 18:09:13,997 [INFO] Preprocessed 10 tweets
+2025-10-16 18:10:45,294 [INFO] Starting Streamlit app
+2025-10-16 18:10:45,377 [INFO] Computed rule-based sentiment for 10 rows
+2025-10-16 18:11:14,516 [INFO] Starting Streamlit app
+2025-10-16 18:11:14,698 [INFO] Saved results to results\tweets_result_20251016_124114.csv
+2025-10-16 18:11:16,149 [INFO] Starting Streamlit app
+2025-10-16 18:27:43,403 [INFO] Starting Streamlit app
+2025-10-16 18:27:44,434 [INFO] Starting Streamlit app
+2025-10-17 10:11:33,919 [INFO] Starting Streamlit app
+2025-10-17 10:12:24,527 [INFO] Starting Streamlit app
+2025-10-17 10:12:24,631 [INFO] Starting Streamlit app
+2025-10-17 10:12:24,710 [INFO] Starting Streamlit app
+2025-10-17 10:12:27,321 [INFO] Starting Streamlit app
+2025-10-17 10:12:32,840 [INFO] Starting Streamlit app
+2025-10-17 10:12:34,132 [INFO] Starting Streamlit app
+2025-10-17 10:13:10,867 [INFO] Starting Streamlit app
+2025-10-17 10:13:15,076 [INFO] Starting Streamlit app
+2025-10-17 10:13:15,161 [INFO] Starting Streamlit app
+2025-10-17 10:13:15,245 [INFO] Starting Streamlit app
+2025-10-17 10:17:04,484 [INFO] Starting Streamlit app
+2025-10-17 10:17:07,991 [INFO] Starting Streamlit app
+2025-10-17 10:17:08,084 [INFO] Starting Streamlit app
+2025-10-17 10:17:08,171 [INFO] Starting Streamlit app
+2025-10-17 10:17:17,542 [INFO] Starting Streamlit app
+2025-10-17 10:17:19,434 [INFO] Starting Streamlit app
+2025-10-17 10:17:25,887 [INFO] Starting Streamlit app
+2025-10-17 10:17:45,955 [INFO] Starting Streamlit app
+2025-10-17 10:17:46,063 [INFO] Starting Streamlit app
+2025-10-17 10:17:46,155 [INFO] Starting Streamlit app
+2025-10-17 10:17:48,937 [INFO] Starting Streamlit app
+2025-10-17 10:17:54,284 [INFO] Starting Streamlit app
+2025-10-17 10:17:55,787 [INFO] Starting Streamlit app
+2025-10-17 10:18:00,867 [INFO] Starting Streamlit app
+2025-10-17 10:18:00,966 [INFO] Fetched 20 tweets (source=Demo CSV / Sample, query=birthday, limit=20)
+2025-10-17 10:18:12,528 [INFO] Starting Streamlit app
+2025-10-17 10:18:12,665 [INFO] Preprocessed 20 tweets
+2025-10-17 10:18:22,955 [INFO] Starting Streamlit app
+2025-10-17 10:18:23,027 [INFO] Computed rule-based sentiment for 20 rows
+2025-10-17 10:18:32,162 [INFO] Starting Streamlit app
+2025-10-17 10:18:32,343 [INFO] Saved results to results\tweets_result_20251017_044832.csv
+2025-10-17 10:18:34,019 [INFO] Starting Streamlit app
+INFO:httpx:HTTP Request: GET https://x.com "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://abs.twimg.com/responsive-web/client-web/ondemand.s.42ab5d2a.js "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://x.com/i/api/graphql/flaR-PUMshxFWZWPNpq4zA/SearchTimeline?variables=%7B%22rawQuery%22%3A+%22tariff%22%2C+%22count%22%3A+10%2C+%22querySource%22%3A+%22typed_query%22%2C+%22product%22%3A+%22Latest%22%7D&features=%7B%22creator_subscriptions_tweet_preview_api_enabled%22%3A+true%2C+%22c9s_tweet_anatomy_moderator_badge_enabled%22%3A+true%2C+%22tweetypie_unmention_optimization_enabled%22%3A+true%2C+%22responsive_web_edit_tweet_api_enabled%22%3A+true%2C+%22graphql_is_translatable_rweb_tweet_is_translatable_enabled%22%3A+true%2C+%22view_counts_everywhere_api_enabled%22%3A+true%2C+%22longform_notetweets_consumption_enabled%22%3A+true%2C+%22responsive_web_twitter_article_tweet_consumption_enabled%22%3A+true%2C+%22tweet_awards_web_tipping_enabled%22%3A+false%2C+%22longform_notetweets_rich_text_read_enabled%22%3A+true%2C+%22longform_notetweets_inline_media_enabled%22%3A+true%2C+%22rweb_video_timestamps_enabled%22%3A+true%2C+%22responsive_web_graphql_exclude_directive_enabled%22%3A+true%2C+%22verified_phone_label_enabled%22%3A+false%2C+%22freedom_of_speech_not_reach_fetch_enabled%22%3A+true%2C+%22standardized_nudges_misinfo%22%3A+true%2C+%22tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled%22%3A+true%2C+%22responsive_web_media_download_video_enabled%22%3A+false%2C+%22responsive_web_graphql_skip_user_profile_image_extensions_enabled%22%3A+false%2C+%22responsive_web_graphql_timeline_navigation_enabled%22%3A+true%2C+%22responsive_web_enhance_cards_enabled%22%3A+false%7D "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: GET https://x.com "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://abs.twimg.com/responsive-web/client-web/ondemand.s.42ab5d2a.js "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://x.com/i/api/graphql/flaR-PUMshxFWZWPNpq4zA/SearchTimeline?variables=%7B%22rawQuery%22%3A+%22tariff%22%2C+%22count%22%3A+10%2C+%22querySource%22%3A+%22typed_query%22%2C+%22product%22%3A+%22Latest%22%7D&features=%7B%22creator_subscriptions_tweet_preview_api_enabled%22%3A+true%2C+%22c9s_tweet_anatomy_moderator_badge_enabled%22%3A+true%2C+%22tweetypie_unmention_optimization_enabled%22%3A+true%2C+%22responsive_web_edit_tweet_api_enabled%22%3A+true%2C+%22graphql_is_translatable_rweb_tweet_is_translatable_enabled%22%3A+true%2C+%22view_counts_everywhere_api_enabled%22%3A+true%2C+%22longform_notetweets_consumption_enabled%22%3A+true%2C+%22responsive_web_twitter_article_tweet_consumption_enabled%22%3A+true%2C+%22tweet_awards_web_tipping_enabled%22%3A+false%2C+%22longform_notetweets_rich_text_read_enabled%22%3A+true%2C+%22longform_notetweets_inline_media_enabled%22%3A+true%2C+%22rweb_video_timestamps_enabled%22%3A+true%2C+%22responsive_web_graphql_exclude_directive_enabled%22%3A+true%2C+%22verified_phone_label_enabled%22%3A+false%2C+%22freedom_of_speech_not_reach_fetch_enabled%22%3A+true%2C+%22standardized_nudges_misinfo%22%3A+true%2C+%22tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled%22%3A+true%2C+%22responsive_web_media_download_video_enabled%22%3A+false%2C+%22responsive_web_graphql_skip_user_profile_image_extensions_enabled%22%3A+false%2C+%22responsive_web_graphql_timeline_navigation_enabled%22%3A+true%2C+%22responsive_web_enhance_cards_enabled%22%3A+false%7D "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://x.com "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://abs.twimg.com/responsive-web/client-web/ondemand.s.42ab5d2a.js "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://x.com/i/api/graphql/flaR-PUMshxFWZWPNpq4zA/SearchTimeline?variables=%7B%22rawQuery%22%3A+%22tariff%22%2C+%22count%22%3A+10%2C+%22querySource%22%3A+%22typed_query%22%2C+%22product%22%3A+%22Latest%22%7D&features=%7B%22creator_subscriptions_tweet_preview_api_enabled%22%3A+true%2C+%22c9s_tweet_anatomy_moderator_badge_enabled%22%3A+true%2C+%22tweetypie_unmention_optimization_enabled%22%3A+true%2C+%22responsive_web_edit_tweet_api_enabled%22%3A+true%2C+%22graphql_is_translatable_rweb_tweet_is_translatable_enabled%22%3A+true%2C+%22view_counts_everywhere_api_enabled%22%3A+true%2C+%22longform_notetweets_consumption_enabled%22%3A+true%2C+%22responsive_web_twitter_article_tweet_consumption_enabled%22%3A+true%2C+%22tweet_awards_web_tipping_enabled%22%3A+false%2C+%22longform_notetweets_rich_text_read_enabled%22%3A+true%2C+%22longform_notetweets_inline_media_enabled%22%3A+true%2C+%22rweb_video_timestamps_enabled%22%3A+true%2C+%22responsive_web_graphql_exclude_directive_enabled%22%3A+true%2C+%22verified_phone_label_enabled%22%3A+false%2C+%22freedom_of_speech_not_reach_fetch_enabled%22%3A+true%2C+%22standardized_nudges_misinfo%22%3A+true%2C+%22tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled%22%3A+true%2C+%22responsive_web_media_download_video_enabled%22%3A+false%2C+%22responsive_web_graphql_skip_user_profile_image_extensions_enabled%22%3A+false%2C+%22responsive_web_graphql_timeline_navigation_enabled%22%3A+true%2C+%22responsive_web_enhance_cards_enabled%22%3A+false%7D "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: GET https://x.com "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://abs.twimg.com/responsive-web/client-web/ondemand.s.42ab5d2a.js "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://x.com/i/api/graphql/flaR-PUMshxFWZWPNpq4zA/SearchTimeline?variables=%7B%22rawQuery%22%3A+%22tariff%22%2C+%22count%22%3A+10%2C+%22querySource%22%3A+%22typed_query%22%2C+%22product%22%3A+%22Latest%22%7D&features=%7B%22creator_subscriptions_tweet_preview_api_enabled%22%3A+true%2C+%22c9s_tweet_anatomy_moderator_badge_enabled%22%3A+true%2C+%22tweetypie_unmention_optimization_enabled%22%3A+true%2C+%22responsive_web_edit_tweet_api_enabled%22%3A+true%2C+%22graphql_is_translatable_rweb_tweet_is_translatable_enabled%22%3A+true%2C+%22view_counts_everywhere_api_enabled%22%3A+true%2C+%22longform_notetweets_consumption_enabled%22%3A+true%2C+%22responsive_web_twitter_article_tweet_consumption_enabled%22%3A+true%2C+%22tweet_awards_web_tipping_enabled%22%3A+false%2C+%22longform_notetweets_rich_text_read_enabled%22%3A+true%2C+%22longform_notetweets_inline_media_enabled%22%3A+true%2C+%22rweb_video_timestamps_enabled%22%3A+true%2C+%22responsive_web_graphql_exclude_directive_enabled%22%3A+true%2C+%22verified_phone_label_enabled%22%3A+false%2C+%22freedom_of_speech_not_reach_fetch_enabled%22%3A+true%2C+%22standardized_nudges_misinfo%22%3A+true%2C+%22tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled%22%3A+true%2C+%22responsive_web_media_download_video_enabled%22%3A+false%2C+%22responsive_web_graphql_skip_user_profile_image_extensions_enabled%22%3A+false%2C+%22responsive_web_graphql_timeline_navigation_enabled%22%3A+true%2C+%22responsive_web_enhance_cards_enabled%22%3A+false%7D "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://x.com "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://abs.twimg.com/responsive-web/client-web/ondemand.s.42ab5d2a.js "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://x.com/i/api/graphql/flaR-PUMshxFWZWPNpq4zA/SearchTimeline?variables=%7B%22rawQuery%22%3A+%22birthday%22%2C+%22count%22%3A+10%2C+%22querySource%22%3A+%22typed_query%22%2C+%22product%22%3A+%22Latest%22%7D&features=%7B%22creator_subscriptions_tweet_preview_api_enabled%22%3A+true%2C+%22c9s_tweet_anatomy_moderator_badge_enabled%22%3A+true%2C+%22tweetypie_unmention_optimization_enabled%22%3A+true%2C+%22responsive_web_edit_tweet_api_enabled%22%3A+true%2C+%22graphql_is_translatable_rweb_tweet_is_translatable_enabled%22%3A+true%2C+%22view_counts_everywhere_api_enabled%22%3A+true%2C+%22longform_notetweets_consumption_enabled%22%3A+true%2C+%22responsive_web_twitter_article_tweet_consumption_enabled%22%3A+true%2C+%22tweet_awards_web_tipping_enabled%22%3A+false%2C+%22longform_notetweets_rich_text_read_enabled%22%3A+true%2C+%22longform_notetweets_inline_media_enabled%22%3A+true%2C+%22rweb_video_timestamps_enabled%22%3A+true%2C+%22responsive_web_graphql_exclude_directive_enabled%22%3A+true%2C+%22verified_phone_label_enabled%22%3A+false%2C+%22freedom_of_speech_not_reach_fetch_enabled%22%3A+true%2C+%22standardized_nudges_misinfo%22%3A+true%2C+%22tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled%22%3A+true%2C+%22responsive_web_media_download_video_enabled%22%3A+false%2C+%22responsive_web_graphql_skip_user_profile_image_extensions_enabled%22%3A+false%2C+%22responsive_web_graphql_timeline_navigation_enabled%22%3A+true%2C+%22responsive_web_enhance_cards_enabled%22%3A+false%7D "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://x.com "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://abs.twimg.com/responsive-web/client-web/ondemand.s.42ab5d2a.js "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://x.com/i/api/graphql/flaR-PUMshxFWZWPNpq4zA/SearchTimeline?variables=%7B%22rawQuery%22%3A+%22marriage%22%2C+%22count%22%3A+10%2C+%22querySource%22%3A+%22typed_query%22%2C+%22product%22%3A+%22Latest%22%7D&features=%7B%22creator_subscriptions_tweet_preview_api_enabled%22%3A+true%2C+%22c9s_tweet_anatomy_moderator_badge_enabled%22%3A+true%2C+%22tweetypie_unmention_optimization_enabled%22%3A+true%2C+%22responsive_web_edit_tweet_api_enabled%22%3A+true%2C+%22graphql_is_translatable_rweb_tweet_is_translatable_enabled%22%3A+true%2C+%22view_counts_everywhere_api_enabled%22%3A+true%2C+%22longform_notetweets_consumption_enabled%22%3A+true%2C+%22responsive_web_twitter_article_tweet_consumption_enabled%22%3A+true%2C+%22tweet_awards_web_tipping_enabled%22%3A+false%2C+%22longform_notetweets_rich_text_read_enabled%22%3A+true%2C+%22longform_notetweets_inline_media_enabled%22%3A+true%2C+%22rweb_video_timestamps_enabled%22%3A+true%2C+%22responsive_web_graphql_exclude_directive_enabled%22%3A+true%2C+%22verified_phone_label_enabled%22%3A+false%2C+%22freedom_of_speech_not_reach_fetch_enabled%22%3A+true%2C+%22standardized_nudges_misinfo%22%3A+true%2C+%22tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled%22%3A+true%2C+%22responsive_web_media_download_video_enabled%22%3A+false%2C+%22responsive_web_graphql_skip_user_profile_image_extensions_enabled%22%3A+false%2C+%22responsive_web_graphql_timeline_navigation_enabled%22%3A+true%2C+%22responsive_web_enhance_cards_enabled%22%3A+false%7D "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: GET https://x.com "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://abs.twimg.com/responsive-web/client-web/ondemand.s.42ab5d2a.js "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://x.com/i/api/graphql/flaR-PUMshxFWZWPNpq4zA/SearchTimeline?variables=%7B%22rawQuery%22%3A+%22marriage%22%2C+%22count%22%3A+10%2C+%22querySource%22%3A+%22typed_query%22%2C+%22product%22%3A+%22Latest%22%7D&features=%7B%22creator_subscriptions_tweet_preview_api_enabled%22%3A+true%2C+%22c9s_tweet_anatomy_moderator_badge_enabled%22%3A+true%2C+%22tweetypie_unmention_optimization_enabled%22%3A+true%2C+%22responsive_web_edit_tweet_api_enabled%22%3A+true%2C+%22graphql_is_translatable_rweb_tweet_is_translatable_enabled%22%3A+true%2C+%22view_counts_everywhere_api_enabled%22%3A+true%2C+%22longform_notetweets_consumption_enabled%22%3A+true%2C+%22responsive_web_twitter_article_tweet_consumption_enabled%22%3A+true%2C+%22tweet_awards_web_tipping_enabled%22%3A+false%2C+%22longform_notetweets_rich_text_read_enabled%22%3A+true%2C+%22longform_notetweets_inline_media_enabled%22%3A+true%2C+%22rweb_video_timestamps_enabled%22%3A+true%2C+%22responsive_web_graphql_exclude_directive_enabled%22%3A+true%2C+%22verified_phone_label_enabled%22%3A+false%2C+%22freedom_of_speech_not_reach_fetch_enabled%22%3A+true%2C+%22standardized_nudges_misinfo%22%3A+true%2C+%22tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled%22%3A+true%2C+%22responsive_web_media_download_video_enabled%22%3A+false%2C+%22responsive_web_graphql_skip_user_profile_image_extensions_enabled%22%3A+false%2C+%22responsive_web_graphql_timeline_navigation_enabled%22%3A+true%2C+%22responsive_web_enhance_cards_enabled%22%3A+false%7D "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://x.com "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://abs.twimg.com/responsive-web/client-web/ondemand.s.42ab5d2a.js "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://x.com/i/api/graphql/flaR-PUMshxFWZWPNpq4zA/SearchTimeline?variables=%7B%22rawQuery%22%3A+%22birthday%22%2C+%22count%22%3A+10%2C+%22querySource%22%3A+%22typed_query%22%2C+%22product%22%3A+%22Latest%22%7D&features=%7B%22creator_subscriptions_tweet_preview_api_enabled%22%3A+true%2C+%22c9s_tweet_anatomy_moderator_badge_enabled%22%3A+true%2C+%22tweetypie_unmention_optimization_enabled%22%3A+true%2C+%22responsive_web_edit_tweet_api_enabled%22%3A+true%2C+%22graphql_is_translatable_rweb_tweet_is_translatable_enabled%22%3A+true%2C+%22view_counts_everywhere_api_enabled%22%3A+true%2C+%22longform_notetweets_consumption_enabled%22%3A+true%2C+%22responsive_web_twitter_article_tweet_consumption_enabled%22%3A+true%2C+%22tweet_awards_web_tipping_enabled%22%3A+false%2C+%22longform_notetweets_rich_text_read_enabled%22%3A+true%2C+%22longform_notetweets_inline_media_enabled%22%3A+true%2C+%22rweb_video_timestamps_enabled%22%3A+true%2C+%22responsive_web_graphql_exclude_directive_enabled%22%3A+true%2C+%22verified_phone_label_enabled%22%3A+false%2C+%22freedom_of_speech_not_reach_fetch_enabled%22%3A+true%2C+%22standardized_nudges_misinfo%22%3A+true%2C+%22tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled%22%3A+true%2C+%22responsive_web_media_download_video_enabled%22%3A+false%2C+%22responsive_web_graphql_skip_user_profile_image_extensions_enabled%22%3A+false%2C+%22responsive_web_graphql_timeline_navigation_enabled%22%3A+true%2C+%22responsive_web_enhance_cards_enabled%22%3A+false%7D "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://x.com "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://abs.twimg.com/responsive-web/client-web/ondemand.s.42ab5d2a.js "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://x.com/i/api/graphql/flaR-PUMshxFWZWPNpq4zA/SearchTimeline?variables=%7B%22rawQuery%22%3A+%22spirit%22%2C+%22count%22%3A+10%2C+%22querySource%22%3A+%22typed_query%22%2C+%22product%22%3A+%22Latest%22%7D&features=%7B%22creator_subscriptions_tweet_preview_api_enabled%22%3A+true%2C+%22c9s_tweet_anatomy_moderator_badge_enabled%22%3A+true%2C+%22tweetypie_unmention_optimization_enabled%22%3A+true%2C+%22responsive_web_edit_tweet_api_enabled%22%3A+true%2C+%22graphql_is_translatable_rweb_tweet_is_translatable_enabled%22%3A+true%2C+%22view_counts_everywhere_api_enabled%22%3A+true%2C+%22longform_notetweets_consumption_enabled%22%3A+true%2C+%22responsive_web_twitter_article_tweet_consumption_enabled%22%3A+true%2C+%22tweet_awards_web_tipping_enabled%22%3A+false%2C+%22longform_notetweets_rich_text_read_enabled%22%3A+true%2C+%22longform_notetweets_inline_media_enabled%22%3A+true%2C+%22rweb_video_timestamps_enabled%22%3A+true%2C+%22responsive_web_graphql_exclude_directive_enabled%22%3A+true%2C+%22verified_phone_label_enabled%22%3A+false%2C+%22freedom_of_speech_not_reach_fetch_enabled%22%3A+true%2C+%22standardized_nudges_misinfo%22%3A+true%2C+%22tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled%22%3A+true%2C+%22responsive_web_media_download_video_enabled%22%3A+false%2C+%22responsive_web_graphql_skip_user_profile_image_extensions_enabled%22%3A+false%2C+%22responsive_web_graphql_timeline_navigation_enabled%22%3A+true%2C+%22responsive_web_enhance_cards_enabled%22%3A+false%7D "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: GET https://x.com "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://x.com "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://abs.twimg.com/responsive-web/client-web/ondemand.s.42ab5d2a.js "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://abs.twimg.com/responsive-web/client-web/ondemand.s.42ab5d2a.js "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://x.com/i/api/graphql/flaR-PUMshxFWZWPNpq4zA/SearchTimeline?variables=%7B%22rawQuery%22%3A+%22spirit%22%2C+%22count%22%3A+10%2C+%22querySource%22%3A+%22typed_query%22%2C+%22product%22%3A+%22Latest%22%7D&features=%7B%22creator_subscriptions_tweet_preview_api_enabled%22%3A+true%2C+%22c9s_tweet_anatomy_moderator_badge_enabled%22%3A+true%2C+%22tweetypie_unmention_optimization_enabled%22%3A+true%2C+%22responsive_web_edit_tweet_api_enabled%22%3A+true%2C+%22graphql_is_translatable_rweb_tweet_is_translatable_enabled%22%3A+true%2C+%22view_counts_everywhere_api_enabled%22%3A+true%2C+%22longform_notetweets_consumption_enabled%22%3A+true%2C+%22responsive_web_twitter_article_tweet_consumption_enabled%22%3A+true%2C+%22tweet_awards_web_tipping_enabled%22%3A+false%2C+%22longform_notetweets_rich_text_read_enabled%22%3A+true%2C+%22longform_notetweets_inline_media_enabled%22%3A+true%2C+%22rweb_video_timestamps_enabled%22%3A+true%2C+%22responsive_web_graphql_exclude_directive_enabled%22%3A+true%2C+%22verified_phone_label_enabled%22%3A+false%2C+%22freedom_of_speech_not_reach_fetch_enabled%22%3A+true%2C+%22standardized_nudges_misinfo%22%3A+true%2C+%22tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled%22%3A+true%2C+%22responsive_web_media_download_video_enabled%22%3A+false%2C+%22responsive_web_graphql_skip_user_profile_image_extensions_enabled%22%3A+false%2C+%22responsive_web_graphql_timeline_navigation_enabled%22%3A+true%2C+%22responsive_web_enhance_cards_enabled%22%3A+false%7D "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: GET https://x.com/i/api/graphql/flaR-PUMshxFWZWPNpq4zA/SearchTimeline?variables=%7B%22rawQuery%22%3A+%22spirit%22%2C+%22count%22%3A+10%2C+%22querySource%22%3A+%22typed_query%22%2C+%22product%22%3A+%22Latest%22%7D&features=%7B%22creator_subscriptions_tweet_preview_api_enabled%22%3A+true%2C+%22c9s_tweet_anatomy_moderator_badge_enabled%22%3A+true%2C+%22tweetypie_unmention_optimization_enabled%22%3A+true%2C+%22responsive_web_edit_tweet_api_enabled%22%3A+true%2C+%22graphql_is_translatable_rweb_tweet_is_translatable_enabled%22%3A+true%2C+%22view_counts_everywhere_api_enabled%22%3A+true%2C+%22longform_notetweets_consumption_enabled%22%3A+true%2C+%22responsive_web_twitter_article_tweet_consumption_enabled%22%3A+true%2C+%22tweet_awards_web_tipping_enabled%22%3A+false%2C+%22longform_notetweets_rich_text_read_enabled%22%3A+true%2C+%22longform_notetweets_inline_media_enabled%22%3A+true%2C+%22rweb_video_timestamps_enabled%22%3A+true%2C+%22responsive_web_graphql_exclude_directive_enabled%22%3A+true%2C+%22verified_phone_label_enabled%22%3A+false%2C+%22freedom_of_speech_not_reach_fetch_enabled%22%3A+true%2C+%22standardized_nudges_misinfo%22%3A+true%2C+%22tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled%22%3A+true%2C+%22responsive_web_media_download_video_enabled%22%3A+false%2C+%22responsive_web_graphql_skip_user_profile_image_extensions_enabled%22%3A+false%2C+%22responsive_web_graphql_timeline_navigation_enabled%22%3A+true%2C+%22responsive_web_enhance_cards_enabled%22%3A+false%7D "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://x.com "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://abs.twimg.com/responsive-web/client-web/ondemand.s.42ab5d2a.js "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://x.com/i/api/graphql/flaR-PUMshxFWZWPNpq4zA/SearchTimeline?variables=%7B%22rawQuery%22%3A+%22spirit%22%2C+%22count%22%3A+10%2C+%22querySource%22%3A+%22typed_query%22%2C+%22product%22%3A+%22Latest%22%7D&features=%7B%22creator_subscriptions_tweet_preview_api_enabled%22%3A+true%2C+%22c9s_tweet_anatomy_moderator_badge_enabled%22%3A+true%2C+%22tweetypie_unmention_optimization_enabled%22%3A+true%2C+%22responsive_web_edit_tweet_api_enabled%22%3A+true%2C+%22graphql_is_translatable_rweb_tweet_is_translatable_enabled%22%3A+true%2C+%22view_counts_everywhere_api_enabled%22%3A+true%2C+%22longform_notetweets_consumption_enabled%22%3A+true%2C+%22responsive_web_twitter_article_tweet_consumption_enabled%22%3A+true%2C+%22tweet_awards_web_tipping_enabled%22%3A+false%2C+%22longform_notetweets_rich_text_read_enabled%22%3A+true%2C+%22longform_notetweets_inline_media_enabled%22%3A+true%2C+%22rweb_video_timestamps_enabled%22%3A+true%2C+%22responsive_web_graphql_exclude_directive_enabled%22%3A+true%2C+%22verified_phone_label_enabled%22%3A+false%2C+%22freedom_of_speech_not_reach_fetch_enabled%22%3A+true%2C+%22standardized_nudges_misinfo%22%3A+true%2C+%22tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled%22%3A+true%2C+%22responsive_web_media_download_video_enabled%22%3A+false%2C+%22responsive_web_graphql_skip_user_profile_image_extensions_enabled%22%3A+false%2C+%22responsive_web_graphql_timeline_navigation_enabled%22%3A+true%2C+%22responsive_web_enhance_cards_enabled%22%3A+false%7D "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://x.com "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://abs.twimg.com/responsive-web/client-web/ondemand.s.42ab5d2a.js "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://x.com/i/api/graphql/flaR-PUMshxFWZWPNpq4zA/SearchTimeline?variables=%7B%22rawQuery%22%3A+%22spirit%22%2C+%22count%22%3A+10%2C+%22querySource%22%3A+%22typed_query%22%2C+%22product%22%3A+%22Latest%22%7D&features=%7B%22creator_subscriptions_tweet_preview_api_enabled%22%3A+true%2C+%22c9s_tweet_anatomy_moderator_badge_enabled%22%3A+true%2C+%22tweetypie_unmention_optimization_enabled%22%3A+true%2C+%22responsive_web_edit_tweet_api_enabled%22%3A+true%2C+%22graphql_is_translatable_rweb_tweet_is_translatable_enabled%22%3A+true%2C+%22view_counts_everywhere_api_enabled%22%3A+true%2C+%22longform_notetweets_consumption_enabled%22%3A+true%2C+%22responsive_web_twitter_article_tweet_consumption_enabled%22%3A+true%2C+%22tweet_awards_web_tipping_enabled%22%3A+false%2C+%22longform_notetweets_rich_text_read_enabled%22%3A+true%2C+%22longform_notetweets_inline_media_enabled%22%3A+true%2C+%22rweb_video_timestamps_enabled%22%3A+true%2C+%22responsive_web_graphql_exclude_directive_enabled%22%3A+true%2C+%22verified_phone_label_enabled%22%3A+false%2C+%22freedom_of_speech_not_reach_fetch_enabled%22%3A+true%2C+%22standardized_nudges_misinfo%22%3A+true%2C+%22tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled%22%3A+true%2C+%22responsive_web_media_download_video_enabled%22%3A+false%2C+%22responsive_web_graphql_skip_user_profile_image_extensions_enabled%22%3A+false%2C+%22responsive_web_graphql_timeline_navigation_enabled%22%3A+true%2C+%22responsive_web_enhance_cards_enabled%22%3A+false%7D "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://x.com "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://abs.twimg.com/responsive-web/client-web/ondemand.s.42ab5d2a.js "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://x.com/i/api/graphql/flaR-PUMshxFWZWPNpq4zA/SearchTimeline?variables=%7B%22rawQuery%22%3A+%22spirit%22%2C+%22count%22%3A+10%2C+%22querySource%22%3A+%22typed_query%22%2C+%22product%22%3A+%22Latest%22%7D&features=%7B%22creator_subscriptions_tweet_preview_api_enabled%22%3A+true%2C+%22c9s_tweet_anatomy_moderator_badge_enabled%22%3A+true%2C+%22tweetypie_unmention_optimization_enabled%22%3A+true%2C+%22responsive_web_edit_tweet_api_enabled%22%3A+true%2C+%22graphql_is_translatable_rweb_tweet_is_translatable_enabled%22%3A+true%2C+%22view_counts_everywhere_api_enabled%22%3A+true%2C+%22longform_notetweets_consumption_enabled%22%3A+true%2C+%22responsive_web_twitter_article_tweet_consumption_enabled%22%3A+true%2C+%22tweet_awards_web_tipping_enabled%22%3A+false%2C+%22longform_notetweets_rich_text_read_enabled%22%3A+true%2C+%22longform_notetweets_inline_media_enabled%22%3A+true%2C+%22rweb_video_timestamps_enabled%22%3A+true%2C+%22responsive_web_graphql_exclude_directive_enabled%22%3A+true%2C+%22verified_phone_label_enabled%22%3A+false%2C+%22freedom_of_speech_not_reach_fetch_enabled%22%3A+true%2C+%22standardized_nudges_misinfo%22%3A+true%2C+%22tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled%22%3A+true%2C+%22responsive_web_media_download_video_enabled%22%3A+false%2C+%22responsive_web_graphql_skip_user_profile_image_extensions_enabled%22%3A+false%2C+%22responsive_web_graphql_timeline_navigation_enabled%22%3A+true%2C+%22responsive_web_enhance_cards_enabled%22%3A+false%7D "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://x.com "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://abs.twimg.com/responsive-web/client-web/ondemand.s.42ab5d2a.js "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://x.com/i/api/graphql/flaR-PUMshxFWZWPNpq4zA/SearchTimeline?variables=%7B%22rawQuery%22%3A+%22spirit%22%2C+%22count%22%3A+7%2C+%22querySource%22%3A+%22typed_query%22%2C+%22product%22%3A+%22Latest%22%7D&features=%7B%22creator_subscriptions_tweet_preview_api_enabled%22%3A+true%2C+%22c9s_tweet_anatomy_moderator_badge_enabled%22%3A+true%2C+%22tweetypie_unmention_optimization_enabled%22%3A+true%2C+%22responsive_web_edit_tweet_api_enabled%22%3A+true%2C+%22graphql_is_translatable_rweb_tweet_is_translatable_enabled%22%3A+true%2C+%22view_counts_everywhere_api_enabled%22%3A+true%2C+%22longform_notetweets_consumption_enabled%22%3A+true%2C+%22responsive_web_twitter_article_tweet_consumption_enabled%22%3A+true%2C+%22tweet_awards_web_tipping_enabled%22%3A+false%2C+%22longform_notetweets_rich_text_read_enabled%22%3A+true%2C+%22longform_notetweets_inline_media_enabled%22%3A+true%2C+%22rweb_video_timestamps_enabled%22%3A+true%2C+%22responsive_web_graphql_exclude_directive_enabled%22%3A+true%2C+%22verified_phone_label_enabled%22%3A+false%2C+%22freedom_of_speech_not_reach_fetch_enabled%22%3A+true%2C+%22standardized_nudges_misinfo%22%3A+true%2C+%22tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled%22%3A+true%2C+%22responsive_web_media_download_video_enabled%22%3A+false%2C+%22responsive_web_graphql_skip_user_profile_image_extensions_enabled%22%3A+false%2C+%22responsive_web_graphql_timeline_navigation_enabled%22%3A+true%2C+%22responsive_web_enhance_cards_enabled%22%3A+false%7D "HTTP/1.1 200 OK"
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-10003' coro=<WebSocketProtocol13.write_message.<locals>.wrapper() done, defined at C:\Users\saidh\realtime-sentiment\venv311\Lib\site-packages\tornado\websocket.py:1111> exception=WebSocketClosedError()>
+Traceback (most recent call last):
+  File "C:\Users\saidh\realtime-sentiment\venv311\Lib\site-packages\tornado\websocket.py", line 1113, in wrapper
+    await fut
+tornado.iostream.StreamClosedError: Stream is closed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\saidh\realtime-sentiment\venv311\Lib\site-packages\tornado\websocket.py", line 1115, in wrapper
+    raise WebSocketClosedError()
+tornado.websocket.WebSocketClosedError
+INFO:httpx:HTTP Request: GET https://x.com "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://abs.twimg.com/responsive-web/client-web/ondemand.s.42ab5d2a.js "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://x.com/i/api/graphql/flaR-PUMshxFWZWPNpq4zA/SearchTimeline?variables=%7B%22rawQuery%22%3A+%22ausvind%22%2C+%22count%22%3A+10%2C+%22querySource%22%3A+%22typed_query%22%2C+%22product%22%3A+%22Latest%22%7D&features=%7B%22creator_subscriptions_tweet_preview_api_enabled%22%3A+true%2C+%22c9s_tweet_anatomy_moderator_badge_enabled%22%3A+true%2C+%22tweetypie_unmention_optimization_enabled%22%3A+true%2C+%22responsive_web_edit_tweet_api_enabled%22%3A+true%2C+%22graphql_is_translatable_rweb_tweet_is_translatable_enabled%22%3A+true%2C+%22view_counts_everywhere_api_enabled%22%3A+true%2C+%22longform_notetweets_consumption_enabled%22%3A+true%2C+%22responsive_web_twitter_article_tweet_consumption_enabled%22%3A+true%2C+%22tweet_awards_web_tipping_enabled%22%3A+false%2C+%22longform_notetweets_rich_text_read_enabled%22%3A+true%2C+%22longform_notetweets_inline_media_enabled%22%3A+true%2C+%22rweb_video_timestamps_enabled%22%3A+true%2C+%22responsive_web_graphql_exclude_directive_enabled%22%3A+true%2C+%22verified_phone_label_enabled%22%3A+false%2C+%22freedom_of_speech_not_reach_fetch_enabled%22%3A+true%2C+%22standardized_nudges_misinfo%22%3A+true%2C+%22tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled%22%3A+true%2C+%22responsive_web_media_download_video_enabled%22%3A+false%2C+%22responsive_web_graphql_skip_user_profile_image_extensions_enabled%22%3A+false%2C+%22responsive_web_graphql_timeline_navigation_enabled%22%3A+true%2C+%22responsive_web_enhance_cards_enabled%22%3A+false%7D "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://x.com "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://abs.twimg.com/responsive-web/client-web/ondemand.s.42ab5d2a.js "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://x.com/i/api/graphql/flaR-PUMshxFWZWPNpq4zA/SearchTimeline?variables=%7B%22rawQuery%22%3A+%22ausvind%22%2C+%22count%22%3A+20%2C+%22querySource%22%3A+%22typed_query%22%2C+%22product%22%3A+%22Latest%22%7D&features=%7B%22creator_subscriptions_tweet_preview_api_enabled%22%3A+true%2C+%22c9s_tweet_anatomy_moderator_badge_enabled%22%3A+true%2C+%22tweetypie_unmention_optimization_enabled%22%3A+true%2C+%22responsive_web_edit_tweet_api_enabled%22%3A+true%2C+%22graphql_is_translatable_rweb_tweet_is_translatable_enabled%22%3A+true%2C+%22view_counts_everywhere_api_enabled%22%3A+true%2C+%22longform_notetweets_consumption_enabled%22%3A+true%2C+%22responsive_web_twitter_article_tweet_consumption_enabled%22%3A+true%2C+%22tweet_awards_web_tipping_enabled%22%3A+false%2C+%22longform_notetweets_rich_text_read_enabled%22%3A+true%2C+%22longform_notetweets_inline_media_enabled%22%3A+true%2C+%22rweb_video_timestamps_enabled%22%3A+true%2C+%22responsive_web_graphql_exclude_directive_enabled%22%3A+true%2C+%22verified_phone_label_enabled%22%3A+false%2C+%22freedom_of_speech_not_reach_fetch_enabled%22%3A+true%2C+%22standardized_nudges_misinfo%22%3A+true%2C+%22tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled%22%3A+true%2C+%22responsive_web_media_download_video_enabled%22%3A+false%2C+%22responsive_web_graphql_skip_user_profile_image_extensions_enabled%22%3A+false%2C+%22responsive_web_graphql_timeline_navigation_enabled%22%3A+true%2C+%22responsive_web_enhance_cards_enabled%22%3A+false%7D "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://x.com "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://abs.twimg.com/responsive-web/client-web/ondemand.s.a6f2619a.js "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://x.com/i/api/graphql/flaR-PUMshxFWZWPNpq4zA/SearchTimeline?variables=%7B%22rawQuery%22%3A+%22CycloneMontha%22%2C+%22count%22%3A+20%2C+%22querySource%22%3A+%22typed_query%22%2C+%22product%22%3A+%22Latest%22%7D&features=%7B%22creator_subscriptions_tweet_preview_api_enabled%22%3A+true%2C+%22c9s_tweet_anatomy_moderator_badge_enabled%22%3A+true%2C+%22tweetypie_unmention_optimization_enabled%22%3A+true%2C+%22responsive_web_edit_tweet_api_enabled%22%3A+true%2C+%22graphql_is_translatable_rweb_tweet_is_translatable_enabled%22%3A+true%2C+%22view_counts_everywhere_api_enabled%22%3A+true%2C+%22longform_notetweets_consumption_enabled%22%3A+true%2C+%22responsive_web_twitter_article_tweet_consumption_enabled%22%3A+true%2C+%22tweet_awards_web_tipping_enabled%22%3A+false%2C+%22longform_notetweets_rich_text_read_enabled%22%3A+true%2C+%22longform_notetweets_inline_media_enabled%22%3A+true%2C+%22rweb_video_timestamps_enabled%22%3A+true%2C+%22responsive_web_graphql_exclude_directive_enabled%22%3A+true%2C+%22verified_phone_label_enabled%22%3A+false%2C+%22freedom_of_speech_not_reach_fetch_enabled%22%3A+true%2C+%22standardized_nudges_misinfo%22%3A+true%2C+%22tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled%22%3A+true%2C+%22responsive_web_media_download_video_enabled%22%3A+false%2C+%22responsive_web_graphql_skip_user_profile_image_extensions_enabled%22%3A+false%2C+%22responsive_web_graphql_timeline_navigation_enabled%22%3A+true%2C+%22responsive_web_enhance_cards_enabled%22%3A+false%7D "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://x.com "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://abs.twimg.com/responsive-web/client-web/ondemand.s.a6f2619a.js "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://x.com/i/api/graphql/flaR-PUMshxFWZWPNpq4zA/SearchTimeline?variables=%7B%22rawQuery%22%3A+%22Liverpool%22%2C+%22count%22%3A+20%2C+%22querySource%22%3A+%22typed_query%22%2C+%22product%22%3A+%22Latest%22%7D&features=%7B%22creator_subscriptions_tweet_preview_api_enabled%22%3A+true%2C+%22c9s_tweet_anatomy_moderator_badge_enabled%22%3A+true%2C+%22tweetypie_unmention_optimization_enabled%22%3A+true%2C+%22responsive_web_edit_tweet_api_enabled%22%3A+true%2C+%22graphql_is_translatable_rweb_tweet_is_translatable_enabled%22%3A+true%2C+%22view_counts_everywhere_api_enabled%22%3A+true%2C+%22longform_notetweets_consumption_enabled%22%3A+true%2C+%22responsive_web_twitter_article_tweet_consumption_enabled%22%3A+true%2C+%22tweet_awards_web_tipping_enabled%22%3A+false%2C+%22longform_notetweets_rich_text_read_enabled%22%3A+true%2C+%22longform_notetweets_inline_media_enabled%22%3A+true%2C+%22rweb_video_timestamps_enabled%22%3A+true%2C+%22responsive_web_graphql_exclude_directive_enabled%22%3A+true%2C+%22verified_phone_label_enabled%22%3A+false%2C+%22freedom_of_speech_not_reach_fetch_enabled%22%3A+true%2C+%22standardized_nudges_misinfo%22%3A+true%2C+%22tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled%22%3A+true%2C+%22responsive_web_media_download_video_enabled%22%3A+false%2C+%22responsive_web_graphql_skip_user_profile_image_extensions_enabled%22%3A+false%2C+%22responsive_web_graphql_timeline_navigation_enabled%22%3A+true%2C+%22responsive_web_enhance_cards_enabled%22%3A+false%7D "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: GET https://x.com "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://abs.twimg.com/responsive-web/client-web/ondemand.s.a6f2619a.js "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://x.com/i/api/graphql/flaR-PUMshxFWZWPNpq4zA/SearchTimeline?variables=%7B%22rawQuery%22%3A+%22Liverpool%22%2C+%22count%22%3A+20%2C+%22querySource%22%3A+%22typed_query%22%2C+%22product%22%3A+%22Latest%22%7D&features=%7B%22creator_subscriptions_tweet_preview_api_enabled%22%3A+true%2C+%22c9s_tweet_anatomy_moderator_badge_enabled%22%3A+true%2C+%22tweetypie_unmention_optimization_enabled%22%3A+true%2C+%22responsive_web_edit_tweet_api_enabled%22%3A+true%2C+%22graphql_is_translatable_rweb_tweet_is_translatable_enabled%22%3A+true%2C+%22view_counts_everywhere_api_enabled%22%3A+true%2C+%22longform_notetweets_consumption_enabled%22%3A+true%2C+%22responsive_web_twitter_article_tweet_consumption_enabled%22%3A+true%2C+%22tweet_awards_web_tipping_enabled%22%3A+false%2C+%22longform_notetweets_rich_text_read_enabled%22%3A+true%2C+%22longform_notetweets_inline_media_enabled%22%3A+true%2C+%22rweb_video_timestamps_enabled%22%3A+true%2C+%22responsive_web_graphql_exclude_directive_enabled%22%3A+true%2C+%22verified_phone_label_enabled%22%3A+false%2C+%22freedom_of_speech_not_reach_fetch_enabled%22%3A+true%2C+%22standardized_nudges_misinfo%22%3A+true%2C+%22tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled%22%3A+true%2C+%22responsive_web_media_download_video_enabled%22%3A+false%2C+%22responsive_web_graphql_skip_user_profile_image_extensions_enabled%22%3A+false%2C+%22responsive_web_graphql_timeline_navigation_enabled%22%3A+true%2C+%22responsive_web_enhance_cards_enabled%22%3A+false%7D "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: GET https://x.com "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://abs.twimg.com/responsive-web/client-web/ondemand.s.a6f2619a.js "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://x.com/i/api/graphql/flaR-PUMshxFWZWPNpq4zA/SearchTimeline?variables=%7B%22rawQuery%22%3A+%22Liverpool%22%2C+%22count%22%3A+10%2C+%22querySource%22%3A+%22typed_query%22%2C+%22product%22%3A+%22Latest%22%7D&features=%7B%22creator_subscriptions_tweet_preview_api_enabled%22%3A+true%2C+%22c9s_tweet_anatomy_moderator_badge_enabled%22%3A+true%2C+%22tweetypie_unmention_optimization_enabled%22%3A+true%2C+%22responsive_web_edit_tweet_api_enabled%22%3A+true%2C+%22graphql_is_translatable_rweb_tweet_is_translatable_enabled%22%3A+true%2C+%22view_counts_everywhere_api_enabled%22%3A+true%2C+%22longform_notetweets_consumption_enabled%22%3A+true%2C+%22responsive_web_twitter_article_tweet_consumption_enabled%22%3A+true%2C+%22tweet_awards_web_tipping_enabled%22%3A+false%2C+%22longform_notetweets_rich_text_read_enabled%22%3A+true%2C+%22longform_notetweets_inline_media_enabled%22%3A+true%2C+%22rweb_video_timestamps_enabled%22%3A+true%2C+%22responsive_web_graphql_exclude_directive_enabled%22%3A+true%2C+%22verified_phone_label_enabled%22%3A+false%2C+%22freedom_of_speech_not_reach_fetch_enabled%22%3A+true%2C+%22standardized_nudges_misinfo%22%3A+true%2C+%22tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled%22%3A+true%2C+%22responsive_web_media_download_video_enabled%22%3A+false%2C+%22responsive_web_graphql_skip_user_profile_image_extensions_enabled%22%3A+false%2C+%22responsive_web_graphql_timeline_navigation_enabled%22%3A+true%2C+%22responsive_web_enhance_cards_enabled%22%3A+false%7D "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://x.com "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://abs.twimg.com/responsive-web/client-web/ondemand.s.d2d4048a.js "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://x.com/i/api/graphql/flaR-PUMshxFWZWPNpq4zA/SearchTimeline?variables=%7B%22rawQuery%22%3A+%22bulls%22%2C+%22count%22%3A+5%2C+%22querySource%22%3A+%22typed_query%22%2C+%22product%22%3A+%22Latest%22%7D&features=%7B%22creator_subscriptions_tweet_preview_api_enabled%22%3A+true%2C+%22c9s_tweet_anatomy_moderator_badge_enabled%22%3A+true%2C+%22tweetypie_unmention_optimization_enabled%22%3A+true%2C+%22responsive_web_edit_tweet_api_enabled%22%3A+true%2C+%22graphql_is_translatable_rweb_tweet_is_translatable_enabled%22%3A+true%2C+%22view_counts_everywhere_api_enabled%22%3A+true%2C+%22longform_notetweets_consumption_enabled%22%3A+true%2C+%22responsive_web_twitter_article_tweet_consumption_enabled%22%3A+true%2C+%22tweet_awards_web_tipping_enabled%22%3A+false%2C+%22longform_notetweets_rich_text_read_enabled%22%3A+true%2C+%22longform_notetweets_inline_media_enabled%22%3A+true%2C+%22rweb_video_timestamps_enabled%22%3A+true%2C+%22responsive_web_graphql_exclude_directive_enabled%22%3A+true%2C+%22verified_phone_label_enabled%22%3A+false%2C+%22freedom_of_speech_not_reach_fetch_enabled%22%3A+true%2C+%22standardized_nudges_misinfo%22%3A+true%2C+%22tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled%22%3A+true%2C+%22responsive_web_media_download_video_enabled%22%3A+false%2C+%22responsive_web_graphql_skip_user_profile_image_extensions_enabled%22%3A+false%2C+%22responsive_web_graphql_timeline_navigation_enabled%22%3A+true%2C+%22responsive_web_enhance_cards_enabled%22%3A+false%7D "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://x.com "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://abs.twimg.com/responsive-web/client-web/ondemand.s.d2d4048a.js "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://x.com/i/api/graphql/flaR-PUMshxFWZWPNpq4zA/SearchTimeline?variables=%7B%22rawQuery%22%3A+%22birthday%22%2C+%22count%22%3A+10%2C+%22querySource%22%3A+%22typed_query%22%2C+%22product%22%3A+%22Latest%22%7D&features=%7B%22creator_subscriptions_tweet_preview_api_enabled%22%3A+true%2C+%22c9s_tweet_anatomy_moderator_badge_enabled%22%3A+true%2C+%22tweetypie_unmention_optimization_enabled%22%3A+true%2C+%22responsive_web_edit_tweet_api_enabled%22%3A+true%2C+%22graphql_is_translatable_rweb_tweet_is_translatable_enabled%22%3A+true%2C+%22view_counts_everywhere_api_enabled%22%3A+true%2C+%22longform_notetweets_consumption_enabled%22%3A+true%2C+%22responsive_web_twitter_article_tweet_consumption_enabled%22%3A+true%2C+%22tweet_awards_web_tipping_enabled%22%3A+false%2C+%22longform_notetweets_rich_text_read_enabled%22%3A+true%2C+%22longform_notetweets_inline_media_enabled%22%3A+true%2C+%22rweb_video_timestamps_enabled%22%3A+true%2C+%22responsive_web_graphql_exclude_directive_enabled%22%3A+true%2C+%22verified_phone_label_enabled%22%3A+false%2C+%22freedom_of_speech_not_reach_fetch_enabled%22%3A+true%2C+%22standardized_nudges_misinfo%22%3A+true%2C+%22tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled%22%3A+true%2C+%22responsive_web_media_download_video_enabled%22%3A+false%2C+%22responsive_web_graphql_skip_user_profile_image_extensions_enabled%22%3A+false%2C+%22responsive_web_graphql_timeline_navigation_enabled%22%3A+true%2C+%22responsive_web_enhance_cards_enabled%22%3A+false%7D "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://x.com "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://x.com "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://abs.twimg.com/responsive-web/client-web/ondemand.s.d2d4048a.js "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://x.com/i/api/graphql/flaR-PUMshxFWZWPNpq4zA/SearchTimeline?variables=%7B%22rawQuery%22%3A+%22birthday%22%2C+%22count%22%3A+5%2C+%22querySource%22%3A+%22typed_query%22%2C+%22product%22%3A+%22Latest%22%7D&features=%7B%22creator_subscriptions_tweet_preview_api_enabled%22%3A+true%2C+%22c9s_tweet_anatomy_moderator_badge_enabled%22%3A+true%2C+%22tweetypie_unmention_optimization_enabled%22%3A+true%2C+%22responsive_web_edit_tweet_api_enabled%22%3A+true%2C+%22graphql_is_translatable_rweb_tweet_is_translatable_enabled%22%3A+true%2C+%22view_counts_everywhere_api_enabled%22%3A+true%2C+%22longform_notetweets_consumption_enabled%22%3A+true%2C+%22responsive_web_twitter_article_tweet_consumption_enabled%22%3A+true%2C+%22tweet_awards_web_tipping_enabled%22%3A+false%2C+%22longform_notetweets_rich_text_read_enabled%22%3A+true%2C+%22longform_notetweets_inline_media_enabled%22%3A+true%2C+%22rweb_video_timestamps_enabled%22%3A+true%2C+%22responsive_web_graphql_exclude_directive_enabled%22%3A+true%2C+%22verified_phone_label_enabled%22%3A+false%2C+%22freedom_of_speech_not_reach_fetch_enabled%22%3A+true%2C+%22standardized_nudges_misinfo%22%3A+true%2C+%22tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled%22%3A+true%2C+%22responsive_web_media_download_video_enabled%22%3A+false%2C+%22responsive_web_graphql_skip_user_profile_image_extensions_enabled%22%3A+false%2C+%22responsive_web_graphql_timeline_navigation_enabled%22%3A+true%2C+%22responsive_web_enhance_cards_enabled%22%3A+false%7D "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://x.com "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://x.com "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://abs.twimg.com/responsive-web/client-web/ondemand.s.d2d4048a.js "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://x.com/i/api/graphql/flaR-PUMshxFWZWPNpq4zA/SearchTimeline?variables=%7B%22rawQuery%22%3A+%22birthday%22%2C+%22count%22%3A+10%2C+%22querySource%22%3A+%22typed_query%22%2C+%22product%22%3A+%22Latest%22%7D&features=%7B%22creator_subscriptions_tweet_preview_api_enabled%22%3A+true%2C+%22c9s_tweet_anatomy_moderator_badge_enabled%22%3A+true%2C+%22tweetypie_unmention_optimization_enabled%22%3A+true%2C+%22responsive_web_edit_tweet_api_enabled%22%3A+true%2C+%22graphql_is_translatable_rweb_tweet_is_translatable_enabled%22%3A+true%2C+%22view_counts_everywhere_api_enabled%22%3A+true%2C+%22longform_notetweets_consumption_enabled%22%3A+true%2C+%22responsive_web_twitter_article_tweet_consumption_enabled%22%3A+true%2C+%22tweet_awards_web_tipping_enabled%22%3A+false%2C+%22longform_notetweets_rich_text_read_enabled%22%3A+true%2C+%22longform_notetweets_inline_media_enabled%22%3A+true%2C+%22rweb_video_timestamps_enabled%22%3A+true%2C+%22responsive_web_graphql_exclude_directive_enabled%22%3A+true%2C+%22verified_phone_label_enabled%22%3A+false%2C+%22freedom_of_speech_not_reach_fetch_enabled%22%3A+true%2C+%22standardized_nudges_misinfo%22%3A+true%2C+%22tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled%22%3A+true%2C+%22responsive_web_media_download_video_enabled%22%3A+false%2C+%22responsive_web_graphql_skip_user_profile_image_extensions_enabled%22%3A+false%2C+%22responsive_web_graphql_timeline_navigation_enabled%22%3A+true%2C+%22responsive_web_enhance_cards_enabled%22%3A+false%7D "HTTP/1.1 200 OK"
